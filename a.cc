@@ -1,5 +1,6 @@
-#include <time.h>
 #include <exception>
+
+#include <time.h>
 
 void a() {
   static const timespec t{0, 1000000};

@@ -1,3 +1,8 @@
 CXXFLAGS += -O0
+CXXFLAGS += -fno-inline
+
 a.s: a.cc
-	$(CXX) -O0 -S -o $@ $<
+	$(CXX) $(CXXFLAGS) -S -o $@ $<
+
+b.out: b.cc
+	$(CXX) $(CXXFLAGS) -o $@ $<
